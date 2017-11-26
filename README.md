@@ -2,9 +2,9 @@
 
 A Ludum Dare template using HaxeFlixel. Includes Visual Studio Code settings for default build task.
 
-## Installation (for the mac)
+## Installation
   
-### If you don’t have haxe, install it with something like homebrew
+### If you don’t have haxe, install it manually from [haxe.org](https://haxe.org) or with something like homebrew (on the mac)
 
 ```
 brew install haxe

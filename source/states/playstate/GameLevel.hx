@@ -69,4 +69,24 @@ class GameLevel extends FlxGroup {
     add(uiLayer);
   }
 
+  public function isGameOver(): Bool {
+    #if debug // This part (cheat) of the code is only active if the -debug parameter is present
+      if (FlxG.keys.justPressed.ZERO) {
+        return true;
+      }
+    #end
+    // Write your game over check here
+    return false;
+  }
+
+  public function isLevelComplete(): Bool {
+    #if debug // Read above comment
+      if (FlxG.keys.justPressed.NINE) {
+        return true;
+      }
+    #end
+    // Write your level completion terms here
+    return false;
+  }
+
 }
