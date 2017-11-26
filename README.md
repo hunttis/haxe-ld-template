@@ -10,9 +10,16 @@ A Ludum Dare template using HaxeFlixel. Includes Visual Studio Code settings for
 brew install haxe
 ```
 
+If you used Homebrew, add the following to your .bashrc or equivalent file:
+```
+export HAXE_STD_PATH="/usr/local/lib/haxe/std"
+```
+
 ### Once you have haxe installed
 
 ```
+haxelib setup
+
 haxelib install flixel
 haxelib install flixel-tools
 
