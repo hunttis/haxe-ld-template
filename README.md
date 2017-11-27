@@ -32,6 +32,27 @@ haxelib run flixel setup
 lime test neko
 ```
 
+### Developing in server mode
+
+Run the haxe compiler in server mode to speed up compilation:
+
+```
+haxe --wait 6000
+```
+
+Start BrowserSync to refresh the software on build:
+
+```
+npm install
+npm run start
+```
+
+Compile to see changes
+
+```
+lime test html5
+```
+
 ## Notice
 As it currently stands, HaxeFlixel is a bit behind OpenFL and Lime-versions. If you ever decide to run `haxelib upgrade`, make sure you don’t upgrade openFL and Lime. In case you do, you can still set haxelib to use older versions with `haxelib set lime 2.9.1` and `haxelib set openfl 3.6.1`
 
