@@ -1,0 +1,15 @@
+{
+  "name": "haxe-ld-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Haxe template for Ludum Dare",
+  "repository": "https://github.com/hunttis/haxe-ld-template.git",
+  "author": "Ville Nuutinen, Tommi Helander, Joni Katajamäki",
+  "license": "MIT",
+  "scripts": {
+    "start": "browser-sync start --server 'export/html5/bin' --files 'export/html5/bin/*.js'"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}

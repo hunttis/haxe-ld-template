@@ -81,4 +81,9 @@
 	<!--------------------------------CUSTOM---------------------------------------->
 	
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
+
+	<section if="html5">
+		<!-- Run haxe compiler in the background with "haxe -v --wait 6000" -->
+		<haxeflag name="--connect 6000" />
+	</section>
 </project>
