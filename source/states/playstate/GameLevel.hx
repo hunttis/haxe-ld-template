@@ -14,10 +14,12 @@ class GameLevel extends FlxGroup {
   private var uiLayer: FlxGroup;
 
   private var player: Player;
+  private var tileCursor: TileCursor;
 
 	public function new(levelNumber): Void {
 		super();
     loadLevel(levelNumber);
+    createTileCursor();
 	}
 	
 	override public function update(elapsed: Float): Void {
@@ -39,6 +41,7 @@ class GameLevel extends FlxGroup {
   private function checkMouse(elapsed: Float): Void {
     #if (!mobile)
       // Mouse not on mobile!
+      
     #end
   }
 
@@ -67,6 +70,14 @@ class GameLevel extends FlxGroup {
     add(backgroundLayer);
     add(foregroundLayer);
     add(uiLayer);
+  }
+
+  private function createTileCursor(): Void {
+    #if (!mobile)
+      // Mouse not on mobile!
+      tileCursor = new TileCursor();
+      uiLayer.add(tileCursor);
+    #end
   }
 
   public function isGameOver(): Bool {

@@ -43,6 +43,13 @@
 	
 	<!--In case you want to use nape with flixel-->
 	<!--<haxelib name="nape" />-->
+  
+  <!-- These two are required for nape to work with neko -->
+
+  <!--
+	<haxedef name="no-inline" if="neko" />
+	<haxedef name="dce=full" if="neko" />
+  -->
 	
 	<!--------------------------------HAXEDEFINES----------------------------------->
 	
@@ -56,7 +63,7 @@
 	<haxedef name="FLX_NO_NATIVE_CURSOR" />
 	
 	<!--Optimise inputs, be careful you will get null errors if you don't use conditionals in your game-->
-	<haxedef name="FLX_NO_MOUSE" />
+	<haxedef name="FLX_NO_MOUSE" if="mobile" />
 	<haxedef name="FLX_NO_KEYBOARD" if="mobile" />
 	<haxedef name="FLX_NO_TOUCH" unless="mobile" />
 	<haxedef name="FLX_NO_GAMEPAD" />
@@ -82,8 +89,10 @@
 	
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
 
+  <!-- Run haxe compiler in the background with "haxe -v --wait 6000"-->
 	<section if="html5">
-		<!-- Run haxe compiler in the background with "haxe -v --wait 6000" -->
-		<haxeflag name="--connect 6000" />
+    <haxeflag name="--connect 6000" />
 	</section>
+  
+  
 </project>
