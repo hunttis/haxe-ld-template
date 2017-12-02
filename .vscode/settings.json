@@ -1,5 +1,6 @@
 {
 	"haxe.displayConfigurations": [
+		["export/mac64/neko/haxe/debug.hxml"],
 		["export/flash/haxe/debug.hxml"],
 		["export/flash/haxe/release.hxml"],
 		["export/html5/haxe/debug.hxml"],
@@ -14,7 +15,6 @@
 		["export/linux64/neko/haxe/release.hxml"],
 		["export/mac64/cpp/haxe/debug.hxml"],
 		["export/mac64/cpp/haxe/release.hxml"],
-		["export/mac64/neko/haxe/debug.hxml"],
 		["export/mac64/neko/haxe/release.hxml"],
 		["export/android/haxe/debug.hxml"],
 		["export/android/haxe/release.hxml"],
