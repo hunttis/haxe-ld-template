@@ -23,6 +23,7 @@ haxelib setup
 haxelib install flixel
 haxelib install flixel-tools
 
+haxelib run lime setup
 haxelib run flixel setup
 ```
 
