@@ -24,11 +24,21 @@
 			"command": "haxelib",
 			"args": ["run", "lime", "test", "html5"],
 			"problemMatcher": "$haxe"
+    },
+    {
+			"taskName": "html5 debug",
+      "command": "haxelib",
+			"args": ["run", "lime", "test", "html5", "-debug"],
+			"problemMatcher": "$haxe"
 		},
 		{
-			"taskName": "html5 debug",
-			"command": "haxelib",
-			"args": ["run", "lime", "test", "html5", "-debug"],
+			"taskName": "html5 dev build",
+      "command": "haxelib",
+      "group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"args": ["run", "lime", "build", "html5", "-debug"],
 			"problemMatcher": "$haxe"
 		},
 		{
@@ -41,10 +51,6 @@
 			"taskName": "neko debug",
 			"command": "haxelib",
       "args": ["run", "lime", "test", "neko", "-debug"],
-      "group": {
-				"kind": "build",
-				"isDefault": true
-			},
 			"problemMatcher": "$haxe"
 		},
 		{
