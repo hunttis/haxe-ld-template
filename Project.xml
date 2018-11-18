@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-	<!------------------------------APPLICATION SETTINGS---------------------------->
+	<!----------------------------APPLICATION SETTINGS---------------------------->
 	
 	<app title="LD-Template" file="LD-template" main="Main" version="0.0.1" company="Hunttis" />
 	
