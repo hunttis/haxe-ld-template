@@ -2,7 +2,7 @@
 
 A Ludum Dare template using HaxeFlixel. Includes Visual Studio Code settings for default build task.
 
-Updated now for HaxeFlixel 4.4.0 and OpenFL 8!
+Updated now for HaxeFlixel 4.6.0 and OpenFL 8!
 
 ## Installation
 
@@ -38,12 +38,6 @@ lime test html5
 ```
 
 ### Developing in server mode
-
-Run the haxe compiler in server mode to speed up compilation:
-
-```
-haxe --wait 6000
-```
 
 Start a second terminal window, and in it BrowserSync to refresh the software on build:
 

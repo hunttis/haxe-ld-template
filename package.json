@@ -10,6 +10,6 @@
     "start": "browser-sync start --server 'export/html5/bin' --files 'export/html5/bin/*.js'"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.13"
+    "browser-sync": "^2.26.5"
   }
 }
