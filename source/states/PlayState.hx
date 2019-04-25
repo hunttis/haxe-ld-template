@@ -9,18 +9,18 @@ class PlayState extends FlxState {
   private var currentLevel: GameLevel;
   private var currentLevelNumber: Int = 1;
 
-	override public function create(): Void {
-		super.create();
+  override public function create(): Void {
+    super.create();
     currentLevel = loadLevel(currentLevelNumber);
     add(currentLevel);
-	}
-	
-	override public function update(elapsed: Float): Void {
+  }
+
+  override public function update(elapsed: Float): Void {
     super.update(elapsed);
     Util.checkQuitKey();
     checkForGameOver();
     checkForLevelEnd();
-	}
+  }
 
   private function loadLevel(levelNumber: Int): GameLevel {
     return new GameLevel(levelNumber);

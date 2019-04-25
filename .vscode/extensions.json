@@ -1,5 +1,8 @@
 {
 	"recommendations": [
-		"nadako.vshaxe"
+    "nadako.vshaxe",
+    "vshaxe.haxe-checkstyle",
+    "vshaxe.haxe-extension-pack",
+    "openfl.lime-vscode-extension"
 	]
 }

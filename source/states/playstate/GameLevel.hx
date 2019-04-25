@@ -16,16 +16,16 @@ class GameLevel extends FlxGroup {
   private var player: Player;
   private var tileCursor: TileCursor;
 
-	public function new(levelNumber): Void {
-		super();
+  public function new(levelNumber): Void {
+    super();
     loadLevel(levelNumber);
     createTileCursor();
-	}
-	
-	override public function update(elapsed: Float): Void {
-		super.update(elapsed);
+  }
+  
+  override public function update(elapsed: Float): Void {
+    super.update(elapsed);
     checkControls(elapsed);
-	}
+  }
 
   private function checkControls(elapsed: Float): Void {
     checkMouse(elapsed);
@@ -60,6 +60,7 @@ class GameLevel extends FlxGroup {
 
     FlxG.camera.setScrollBoundsRect(0, 0, levelMap.getForegroundLayer().width, levelMap.getForegroundLayer().height, true);
     FlxG.camera.follow(player, PLATFORMER, 0.3);
+    FlxG.camera.pixelPerfectRender = false; // This prevents one pixel gaps between tiles
   }
 
   private function createLayers(): Void {

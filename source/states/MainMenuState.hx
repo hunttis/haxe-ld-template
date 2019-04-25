@@ -10,19 +10,19 @@ class MainMenuState extends FlxState {
   private var titleText: FlxText;
   private var startText: FlxText;
 
-	override public function create(): Void {
-		super.create();
+  override public function create(): Void {
+    super.create();
     createTitle();
     createInstructions();
-	}
-	
-	override public function update(elapsed: Float): Void {
-		super.update(elapsed);
+  }
+
+  override public function update(elapsed: Float): Void {
+    super.update(elapsed);
     Util.checkQuitKey();
     if (FlxG.keys.justPressed.SPACE) {
       FlxG.switchState(new PlayState());
     }
-	}
+  }
 
   private function createTitle(): Void {
     titleText = new FlxText(FlxG.width / 2, 100, "Game", 64);
@@ -36,6 +36,5 @@ class MainMenuState extends FlxState {
     startText.x -= startText.width / 2;
     add(startText);
   }
-
 
 }

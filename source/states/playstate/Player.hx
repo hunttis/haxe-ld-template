@@ -15,14 +15,14 @@ class Player extends FlxSprite {
     drag.x = maxVelocity.x;
   }
 
-	override public function update(elapsed: Float): Void {
+  override public function update(elapsed: Float): Void {
     acceleration.x = 0;
     checkKeys(elapsed);
 
     // You probably want to do most of the logic before super.update(). This is because after the update, 
     // colliding objects are separated and will no longer be touching.
     super.update(elapsed);
-	}
+  }
 
   private function checkKeys(elapsed: Float): Void {
     #if (!mobile) // Keys are not available on mobile
