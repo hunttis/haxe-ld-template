@@ -60,7 +60,7 @@ class GameLevel extends FlxGroup {
 
     FlxG.camera.setScrollBoundsRect(0, 0, levelMap.getForegroundLayer().width, levelMap.getForegroundLayer().height, true);
     FlxG.camera.follow(player, PLATFORMER, 0.3);
-    FlxG.camera.pixelPerfectRender = false; // This prevents one pixel gaps between tiles
+    FlxG.camera.pixelPerfectRender = true; // This prevents one pixel gaps between tiles
   }
 
   private function createLayers(): Void {
